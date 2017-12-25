@@ -32,7 +32,7 @@ class Histogram():
 
 def make_histogram():
     histo = Histogram(4000)
-    for retweetcount in range(1000, 1200):
+    for retweetcount in range(1000, 4000):
         for h in coprimes(retweetcount):
             for j in range(1, 11):
                 histo.mark(h*j, retweetcount)
